@@ -1,0 +1,33 @@
+Problem Statement: Virtual Bot Arena Navigation
+
+Objective:
+Design an autonomous bot that navigates a structured arena, traverses all paths, and completes a full round, returning to the home zone while following movement rules.
+
+Arena Description:
+
+The arena consists of two main paths (inner and outer squares) connected by four linking paths of different colors.
+
+The bot can switch between inner and outer paths only via the connecting paths.
+
+Bot movement is restricted to a clockwise direction. Any black-colored areas are restricted and cannot be traversed.
+
+The arena contains three shapes — square, circle, and triangle — each in two distinct colors, creating 6 distinguishable blocks. Shape positions may change but remain distinguishable.
+
+The outermost path contains four arrows indicating the Starting Zone where the bot is initially placed.
+
+The center of the arena is the home zone.
+
+The bot must traverse the arena completely, visiting all paths and finishing at the home zone.
+
+A video feed from an overhead camera is provided; the bot must be autonomously guided using this feed.
+
+Constraints:
+
+Movement is clockwise only.
+
+Restricted areas (black portions) must be avoided.
+
+Shapes may change color but are always distinguishable.
+
+Goal:
+Implement an autonomous system that uses the camera feed to control the bot, ensuring it traverses all paths, respects movement constraints, and finishes at the home zone.
