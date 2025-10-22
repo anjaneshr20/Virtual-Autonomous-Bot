@@ -4,18 +4,57 @@
 
 
 Arena Description
-There are 2 paths (inner and outer square) and there are 4 connecting paths of different colours joining them.
-Bot can change from outer path to inner path or vice versa. Bot is allowed to move in a clockwise direction only. The portion of the arena in black colour is restricted for the movement of the bot.
-There will be 3 shapes (square, circle and triangle) of 2 different colours, distinguishing each block in 6 different ways. All shape colours might change but they will be distinguishable easily. The position of shapes in the final area will not be the same as the indicative pictures
-On the outermost path there will be 4 arrows at the end of connecting paths pointing in clockwise direction. These arrows mark the Starting Zone where the bot will be placed initially on any one of the arrows.
-The Centre of the arena is the home zone.
-The bot has to traverse the arena, complete a full round and finish at the home zone.
-A video feed from the overhead camera will be provided to the team. The team’s computer should autonomously instruct their bot throughout the arena using this feed.
+
+The arena consists of two square paths: an inner square and an outer square.
+
+There are 4 connecting paths of different colours that join the inner and outer squares.
+
+The bot can switch between the inner and outer paths using these connecting paths.
+
+Movement is allowed only in the clockwise direction.
+
+Areas marked in black are restricted, and the bot cannot move there.
+
+The arena contains 3 different shapes — square, circle, triangle — each available in 2 colours, resulting in 6 distinct types of blocks.
+
+The position and colour of the shapes may vary, but all will be easily distinguishable.
+
+On the outermost path, there are 4 arrows at the ends of the connecting paths pointing clockwise. These arrows mark the Starting Zones, where the bot can be initially placed.
+
+The center of the arena is designated as the Home Zone.
+
+The bot must traverse the arena, complete a full clockwise round, and finish at the Home Zone.
+
+A video feed from an overhead camera will be provided, and the team’s computer should autonomously control the bot using this feed.
+
 Game Description
-The bot is placed at one of the Starting Zones.
-Team will be given an abbreviation which associate to specific colour and shape. RT for Red Triangle. RS for Red Square. RC for Red Circle. YT for Yellow Triangle. YS for Yellow Square. YC for Yellow Circle.
-The bot must then find the closest block which it can reach following a clockwise path. If two positions with the required colour and shape are at the same distance from the bot then the bot may choose either.
-Signal must be sent to when bot stops moving.
-As soon as the bot stops moving, bot has to ask for input using the function provided.
-This continues till bot has completed a full round around the center, Then it should move to home via the connecting paths that it started on.
-On reaching home the bot should signal that it has finished the task.
+
+The bot starts at one of the Starting Zones.
+
+The team will receive a shape-colour abbreviation, which corresponds to a specific block:
+
+RT – Red Triangle
+
+RS – Red Square
+
+RC – Red Circle
+
+YT – Yellow Triangle
+
+YS – Yellow Square
+
+YC – Yellow Circle
+
+The bot must find the closest block matching the given shape-colour along its clockwise path.
+
+If two matching blocks are equidistant, the bot can choose either one.
+
+When the bot reaches the block and stops, it must signal that it has stopped.
+
+The bot should then request the next input using the provided function.
+
+This process continues until the bot has completed a full round around the center.
+
+After completing the round, the bot must return to the Home Zone via the same connecting path it started from.
+
+Upon reaching the Home Zone, the bot must signal that it has finished the task.
